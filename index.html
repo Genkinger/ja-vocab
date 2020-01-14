@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>日本語の単語</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bulma.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/components.js"></script>
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div class="hero is-dark">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title">
+                        日本語の単語
+                    </h1>
+                    <div class="columns">
+                        <div class="column is-narrow">
+                            <a href="#" @click="current = n5">
+                                <h2 class="subtitle has-text-warning">
+                                    JLPT-N5
+                                </h2>
+                            </a>    
+                        </div>
+                        <div class="column is-narrow">
+                            <a href="#" @click="current = n4">
+                                <h2 class="subtitle has-text-warning">
+                                    JLPT-N4
+                                </h2>
+                            </a>    
+                        </div>
+                        <div class="column is-narrow">
+                            <a href="#" @click="current = n2">
+                                <h2 class="subtitle has-text-warning">
+                                    JLPT-N2
+                                </h2>
+                            </a>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4">
+            <div class="container">
+                <vocab-table class="mx-auto" :vocab="current"></vocab-table>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

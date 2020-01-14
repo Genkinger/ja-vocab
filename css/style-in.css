@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bg-pal-a-1{
+    background-color: #17252a;
+}
+.bg-pal-a-2{
+    background-color: #2b7a78;
+}
+.bg-pal-a-3{
+    background-color: #3aafa9;
+}
+.bg-pal-a-4{
+    background-color: #def2f1;
+}
+.bg-pal-a-5{
+    background-color: #feffff;
+}
+
+.text-pal-a-1{
+    color: #17252a;
+}
+.text-pal-a-2{
+    color: #2b7a78;
+}
+.text-pal-a-3{
+    color: #3aafa9;
+}
+.text-pal-a-4{
+    color : #def2f1;
+}
+.text-pal-a-5{
+    color : #feffff;
+}
